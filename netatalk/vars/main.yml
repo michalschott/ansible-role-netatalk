@@ -1,0 +1,7 @@
+---
+netatalk_version: '3.1.8'
+netatalk_url: 'http://prdownloads.sourceforge.net/netatalk/netatalk-{{ netatalk_version }}.tar.gz?download'
+
+timemachine_enable: true
+timemachine_path: /mnt/nas/TimeMachine
+timemachine_vol_size_limit: 512000
