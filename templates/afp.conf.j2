@@ -1,9 +1,4 @@
-;
-; Netatalk 3.x configuration file
-;
-
 [Global]
-; Global server settings
 vol preset = default_for_all_vol
 hostname = TimeCapsule
 log file = /var/log/netatalk.log
@@ -23,7 +18,7 @@ mimic model = Xserve
 file perm = 0664
 directory perm = 0774
 ;cnid scheme = cbd
-valid users = ms
+valid users = {{ netatalk_timemachine_valid_users }}
 
 ;[Homes]
 ;    basedir regex = /home
@@ -31,6 +26,6 @@ valid users = ms
 ;    cnid scheme = dbd
 
 [Time Machine]
-    path = {{ timemachine_path }}
+    path = {{ netatalk_timemachine_path }}
     time machine = yes
-    vol size limit = {{ timemachine_vol_size_limit }}
+    vol size limit = {{ netatalk_timemachine_vol_size_limit }}

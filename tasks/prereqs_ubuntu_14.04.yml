@@ -1,9 +1,12 @@
 ---
-- name: install prereqs
-  apt: name={{ item }} state=present
+- name: NETATALK | install 14.04 prereqs
+  apt:
+    name: "{{ item }}"
+    state: present
   with_items:
     - avahi-daemon
     - build-essential
+    - checkinstall
     - libacl1-dev
     - libavahi-client-dev
     - libcrack2-dev
@@ -24,4 +27,3 @@
     - libwrap0-dev
     - systemtap-sdt-dev
     - tracker
-  tags: netatalk

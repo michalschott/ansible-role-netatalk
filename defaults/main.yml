@@ -1,0 +1,6 @@
+---
+netatalk_version: '3.1.11'
+netatalk_url: 'http://prdownloads.sourceforge.net/netatalk/netatalk-{{ netatalk_version }}.tar.gz?download'
+netatalk_timemachine_path: /mnt/TimeMachine
+netatalk_timemachine_vol_size_limit: 512000
+netatalk_timemachine_valid_users:
