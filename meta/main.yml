@@ -1,0 +1,16 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Michal Schott
+  description: netatalk for Ubuntu 14.04/16.04
+  license: MIT
+  min_ansible_version: 2.3.0
+  github_branch: master
+  platforms:
+  - name: Ubuntu
+    versions:
+      - trusty
+      - xenial
+  galaxy_tags:
+    - netatalk
