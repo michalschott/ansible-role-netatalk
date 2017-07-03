@@ -1,4 +1,4 @@
-Ansible Role: Packer
+Ansible Role: Netatalk
 =========
 
 [![Build Status](https://travis-ci.org/michalschott/ansible-role-netatalk.svg?branch=master)](https://travis-ci.org/michalschott/ansible-role-netatalk)
@@ -19,11 +19,12 @@ Role Variables
 
 Default variables:
 ```
-packer_version: 0.12.2
-packer_checksum: "sha256:035d0ea1fe785ab6b673bc2a79399125d4014f29151e106635fa818bb726bebf"
-packer_path: /usr/local/bin
-packer_owner: root
-packer_group: root
+netatalk_version: '3.1.11'
+netatalk_url: 'http://prdownloads.sourceforge.net/netatalk/netatalk-{{ netatalk_version }}.tar.gz?download'
+netatalk_timemachine_path: /mnt/TimeMachine
+netatalk_timemachine_vol_size_limit: 512000
+netatalk_timemachine_valid_users:
+
 ```
 
 Dependencies
