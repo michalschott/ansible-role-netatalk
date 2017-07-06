@@ -31,6 +31,14 @@
     state: directory
     mode: 0755
 
+- name: NETATALK | ensure /usr/local/etc/ exists
+  file:
+    state: directory
+    path: /usr/local/etc/
+    owner: root
+    group: root
+    mode: 0644
+
 - name: NETATALK | configure
   template:
     src: afp.conf.j2
