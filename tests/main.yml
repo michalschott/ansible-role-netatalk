@@ -1,6 +1,0 @@
----
-# Test default params
-- hosts: all
-  become: true
-  roles:
-    - michalschott.netatalk
