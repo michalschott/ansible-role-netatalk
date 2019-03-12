@@ -3,7 +3,7 @@ Ansible Role: Netatalk
 
 [![Build Status](https://travis-ci.org/michalschott/ansible-role-netatalk.svg?branch=master)](https://travis-ci.org/michalschott/ansible-role-netatalk)
 
-Simple ansible role, which can be run on `Ubuntu 14.04/16.04` to:
+Simple ansible role, which can be run on `Ubuntu 14.04/16.04/18.04` to:
 - build netatalk (http://netatalk.sourceforge.net) service from source code
 - pack it into .deb archive using checkinstall
 - install it on the same system

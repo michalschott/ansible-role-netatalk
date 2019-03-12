@@ -5,6 +5,9 @@
 - include: prereqs_ubuntu_16.04.yml
   when: ansible_distribution == 'Ubuntu' and ansible_distribution_version == "16.04"
 
+- include: prereqs_ubuntu_18.04.yml
+  when: ansible_distribution == 'Ubuntu' and ansible_distribution_version == "18.04"
+
 - name: NETATALK | download source code
   get_url:
     url: "{{ netatalk_url }}"
