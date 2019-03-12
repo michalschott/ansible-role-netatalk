@@ -1,0 +1,27 @@
+---
+- name: NETATALK | install 18.04 prereqs
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - avahi-daemon
+    - build-essential
+    - checkinstall
+    - libacl1-dev
+    - libavahi-client-dev
+    - libcrack2-dev
+    - libdb-dev
+    - libdbus-1-dev
+    - libdbus-glib-1-dev
+    - libevent-dev
+    - libgcrypt-dev
+    - libglib2.0-dev
+    - libkrb5-dev
+    - libldap2-dev
+    - libmysqlclient-dev
+    - libpam0g-dev
+    - libssl-dev
+    - libtdb-dev
+    - libwrap0-dev
+    - systemtap-sdt-dev
+    - tracker

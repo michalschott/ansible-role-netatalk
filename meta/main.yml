@@ -3,7 +3,7 @@ dependencies: []
 
 galaxy_info:
   author: Michal Schott
-  description: netatalk for Ubuntu 14.04/16.04
+  description: netatalk for Ubuntu 14.04/16.04/18.04
   license: MIT
   min_ansible_version: 2.3.0
   github_branch: master
@@ -12,5 +12,6 @@ galaxy_info:
     versions:
       - trusty
       - xenial
+      - bionic
   galaxy_tags:
     - netatalk
